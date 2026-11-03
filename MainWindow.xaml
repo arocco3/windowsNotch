@@ -1,0 +1,13 @@
+<Window x:Class="NotchApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Notch" Width="440" Height="150"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        Topmost="True" ShowInTaskbar="False" ResizeMode="NoResize">
+
+    <Border x:Name="Pill" Background="Black" CornerRadius="0,0,22,22"
+            Width="180" Height="32" VerticalAlignment="Top" HorizontalAlignment="Center"
+            MouseEnter="OnEnter" MouseLeave="OnLeave" MouseWheel="OnWheel">
+        <ContentControl x:Name="Host" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+</Window>
