@@ -10,7 +10,7 @@ public class ClockModule : INotchModule
 {
     public string Name => "Orologio";
 
-    public UIElement CreateCompactView() => Build(14);
+    public UIElement CreateCompactView() => Build(10);
     public UIElement CreateExpandedView() => Build(36);
 
     private static TextBlock Build(double size)

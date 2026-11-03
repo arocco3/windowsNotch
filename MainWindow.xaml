@@ -7,7 +7,9 @@
 
     <Border x:Name="Pill" Background="Black" CornerRadius="0,0,22,22"
             Width="180" Height="32" VerticalAlignment="Top" HorizontalAlignment="Center"
-            MouseEnter="OnEnter" MouseLeave="OnLeave" MouseWheel="OnWheel">
+            AllowDrop="True"
+            MouseEnter="OnEnter" MouseLeave="OnLeave" MouseWheel="OnWheel"
+            DragEnter="OnDragEnter" DragOver="OnDragOver" DragLeave="OnDragLeave" Drop="OnDrop">
         <ContentControl x:Name="Host" HorizontalAlignment="Center" VerticalAlignment="Center" />
     </Border>
 </Window>
