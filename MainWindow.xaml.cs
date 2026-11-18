@@ -62,7 +62,7 @@ public partial class MainWindow : Window
     private void Collapse()
     {
         _expanded = false;
-        Animate(70, 10);
+        Animate(180, 32);
         Render();
     }
 
